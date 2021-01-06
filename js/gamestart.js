@@ -8,7 +8,7 @@ $("#start").click(() => {
         showCancelButton: true,
         allowOutsideClick: false
     }).then(function (result) {
-        if (result.dismiss === 'cancel') {
+        if (result.dismiss === 'cancel'||result.value ==="") {
             name = "武藤";
             Swal.fire({
                 html: '<span class="text"></span>',
