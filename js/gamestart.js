@@ -11,19 +11,39 @@ $("#start").click(() => {
         if (result.dismiss === 'cancel') {
             name = "武藤";
             Swal.fire({
-                title:'媽媽',
-                text: `${name}!${name}!快起床!今天是開學的第一天!`,
+                html: '<span class="text"></span>',
+                title: '媽媽',
+                onOpen: () => {
+                    options = {
+                        strings: [
+                            `${name}!${name}!快起床!今天是開學的第一天!`
+                        ],
+                        typeSpeed: 40,
+                        startDelay: 300,
+                    };
+                    typed = new Typed('.text', options);
+                },
                 allowOutsideClick: false,
-                confirmButtonText:"甚麼!?"
+                confirmButtonText: "甚麼!?"
             }).then(start);
         }
         else {
             name = result.value;
             Swal.fire({
-                title:'媽媽',
-                text: `${name}!${name}!快起床!今天是開學的第一天!`,
+                html: '<span class="text"></span>',
+                title: '媽媽',
+                onOpen: () => {
+                    options = {
+                        strings: [
+                            `${name}!${name}!快起床!今天是開學的第一天!`
+                        ],
+                        typeSpeed: 40,
+                        startDelay: 300,
+                    };
+                    typed = new Typed('.text', options);
+                },
                 allowOutsideClick: false,
-                confirmButtonText:"甚麼!?"
+                confirmButtonText: "甚麼!?"
             }).then(start);
         }
     });
