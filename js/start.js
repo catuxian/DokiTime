@@ -15,7 +15,7 @@ function start() {
         allowOutsideClick: false,
         confirmButtonText: "確定"
     }).then(() => {
-        $("body").css("background","url('../media/bg/street.jpg')")
+        $("body").css("background","url('media/bg/street.jpg')")
         Swal.fire({
             html: '<span class="text"></span>',
             onOpen: () => {

@@ -1,5 +1,5 @@
 function event1(){
-    $("body").css("background","url('../media/bg/classroom.jpg')")
+    $("body").css("background","url('media/bg/classroom.jpg')")
     Swal.fire({
         title: `${name}`,
         html: '<span class="text"></span>',
