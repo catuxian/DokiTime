@@ -1,4 +1,7 @@
 $("#start").click(() => {
+    $("#start").hide();
+    $("#title").hide();
+    $("body").css("background","white")
     Swal.fire({
         title: '請輸入你的名字',
         input: 'text',

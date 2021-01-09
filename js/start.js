@@ -15,6 +15,7 @@ function start() {
         allowOutsideClick: false,
         confirmButtonText: "確定"
     }).then(() => {
+        $("body").css("background","url('../media/bg/street.jpg')")
         Swal.fire({
             html: '<span class="text"></span>',
             onOpen: () => {
@@ -30,6 +31,7 @@ function start() {
             allowOutsideClick: false,
             confirmButtonText: "確定"
         }).then(() => {
+            $("#normal").show()
             Swal.fire({
                 html: '<span class="text"></span>',
                 onOpen: () => {
@@ -77,6 +79,7 @@ function start() {
                         allowOutsideClick: false,
                         confirmButtonText: "確定"
                     }).then(() => {
+                        $("#normal").hide()
                         Swal.fire({
                             html: '<span class="text"></span>',
                             onOpen: () => {

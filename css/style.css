@@ -1,3 +1,76 @@
-.swal2-content {
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: palevioletred;
+}
+#bg{
+    background: white !important;
+}
+h3{
+    text-align: center;
+    font-size: 9rem;
+    color: white;
+}
+/*開始按鈕*/
+#start {
+    border: 0;
+    font-size: 3rem;
+    color: white;
+    background: transparent;
+    outline: 0 none;
+    cursor: pointer;
+}
+/*背景*/
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+    background: transparent !important;
+}
+/*對話框*/
+.swal2-popup {
+    background: rgb(255 182 193 / 0.5) !important;
+    border: 5px solid #ff9595 !important;
+}
+/*swal2標題位置*/
+.swal2-title {
+    align-self: start;
+}
+/*輸入框focus樣式*/
+textarea:focus, input:focus, input[type]:focus{
+    border-color: rgba(229, 103, 23, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+}
 
+
+/*對話框之容器*/
+.swal2-container {
+    top: 50vh !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #f794a4 !important;
+    outline: 0 none !important;
+}
+button[button] .swal2-styled:focus{
+    outline: 0 none !important;
+}
+#normal{
+
+    height: 83%;
+    position: absolute;
+    right: 7%;
+    bottom: 0px;
+    display: none;
+}
+#hello{
+    height: 140%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
 }
