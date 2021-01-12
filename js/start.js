@@ -1,3 +1,5 @@
+var next="❤";//確認
+var girl="沙織";//女主名字
 function start() {
     Swal.fire({
         title: `${name}`,
@@ -13,15 +15,15 @@ function start() {
             typed = new Typed('.text', options);
         },
         allowOutsideClick: false,
-        confirmButtonText: "確定"
+        confirmButtonText: next
     }).then(() => {
-        $("body").css("background","url('media/bg/street.jpg')")
+        $("body").css("background-image","url('media/bg/street.jpg')")
         Swal.fire({
             html: '<span class="text"></span>',
             onOpen: () => {
                 options = {
                     strings: [
-                        `(衝出家門，趕快跑到學校)太好了，照這個速度，一定能在上課前趕到!`
+                        `(衝出家門，趕快跑到學校)`
                     ],
                     typeSpeed: 40,
                     startDelay: 300,
@@ -29,15 +31,14 @@ function start() {
                 typed = new Typed('.text', options);
             },
             allowOutsideClick: false,
-            confirmButtonText: "確定"
+            confirmButtonText: next
         }).then(() => {
-            $("#normal").show()
             Swal.fire({
                 html: '<span class="text"></span>',
                 onOpen: () => {
                     options = {
                         strings: [
-                            `突然從轉角衝出來一個女生`
+                            `太好了，照這個速度，一定能在上課前趕到!離校門口只差一點距離了...啊!`
                         ],
                         typeSpeed: 40,
                         startDelay: 300,
@@ -45,7 +46,7 @@ function start() {
                     typed = new Typed('.text', options);
                 },
                 allowOutsideClick: false,
-                confirmButtonText: "確定"
+                confirmButtonText: next
             }).then(() => {
                 Swal.fire({
                     title: `${name}`,
@@ -53,7 +54,7 @@ function start() {
                     onOpen: () => {
                         options = {
                             strings: [
-                                `呃啊...好痛...你幹嘛突然衝出來啊`
+                                `好痛...剛剛是誰撞到我?`
                             ],
                             typeSpeed: 40,
                             startDelay: 300,
@@ -61,15 +62,16 @@ function start() {
                         typed = new Typed('.text', options);
                     },
                     allowOutsideClick: false,
-                    confirmButtonText: "確定"
+                    confirmButtonText: next
                 }).then(() => {
+                    $(".normal").show();
                     Swal.fire({
-                        title: `女生`,
+                        title: `${name}`,
                         html: '<span class="text"></span>',
                         onOpen: () => {
                             options = {
                                 strings: [
-                                    `對不起！對不起！`
+                                    `看剛剛的身影好像是個女生...啊!不好了，校門要關起來了`
                                 ],
                                 typeSpeed: 40,
                                 startDelay: 300,
@@ -77,42 +79,8 @@ function start() {
                             typed = new Typed('.text', options);
                         },
                         allowOutsideClick: false,
-                        confirmButtonText: "確定"
-                    }).then(() => {
-                        $("#normal").hide()
-                        Swal.fire({
-                            html: '<span class="text"></span>',
-                            onOpen: () => {
-                                options = {
-                                    strings: [
-                                        `女生匆匆忙忙地跑走了`
-                                    ],
-                                    typeSpeed: 40,
-                                    startDelay: 300,
-                                };
-                                typed = new Typed('.text', options);
-                            },
-                            allowOutsideClick: false,
-                            confirmButtonText: "確定"
-                        }).then(() => {
-                            Swal.fire({
-                                title: `${name}`,
-                                html: '<span class="text"></span>',
-                                onOpen: () => {
-                                    options = {
-                                        strings: [
-                                            `這人是怎樣啊...還把吐司掉到地上...啊!不好了!快遲到了!`
-                                        ],
-                                        typeSpeed: 40,
-                                        startDelay: 300,
-                                    };
-                                    typed = new Typed('.text', options);
-                                },
-                                allowOutsideClick: false,
-                                confirmButtonText: "確定"
-                            }).then(event1)
-                        })
-                    })
+                        confirmButtonText: next
+                    }).then(event1)
                 })
             })
         })
