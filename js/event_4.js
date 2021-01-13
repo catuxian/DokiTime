@@ -69,7 +69,7 @@ function event4() {
                         onOpen: () => {
                             options = {
                                 strings: [
-                                    `對了，${name}，聽說這附近有一座新開的遊樂園，這周末要不要一起去看看?`
+                                    `對了，${name}，聽說這附近有一座新開的遊樂園，聽說評價還不錯`
                                 ],
                                 typeSpeed: 40,
                                 startDelay: 300,
@@ -85,7 +85,7 @@ function event4() {
                             onOpen: () => {
                                 options = {
                                     strings: [
-                                        `對了，${name}，聽說這附近有一座新開的遊樂園，這周末要不要一起去看看?`
+                                        `這周末要不要一起去看看?`
                                     ],
                                     typeSpeed: 40,
                                     startDelay: 300,
